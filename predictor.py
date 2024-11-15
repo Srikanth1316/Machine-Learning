@@ -8,7 +8,7 @@ import requests
 import pickle
 
 model_url = 'https://raw.githubusercontent.com/Srikanth1316/Machine-Learning/master/model_pickle2'
-response = requests.get(model_url, stram = True)
+response = requests.get(model_url, stream = True)
 response.raise_for_status()
 
     model = pickle.load(response.content)
